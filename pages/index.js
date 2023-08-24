@@ -1,5 +1,11 @@
-function Home() {
-    return <h1>Test</h1>
+import Spreadsheet from "react-spreadsheet";
+
+function App() {
+    const data = [
+        [{ value: 1 }, { value: "=SUM(A1:A2)" }],
+        [{ value: 5 }, { value: "cookies" }],
+    ];
+    return <Spreadsheet data={data}/>;
 }
 
-export default Home;
+export default App;
